@@ -1,0 +1,204 @@
+{
+    "coursename" : "AutoCAD",
+    "skills" : ["AutoCAD", "Submission"],
+    "thumbnail_cover" : "https://i.imgur.com/3Ddxa2X.jpg",
+    "thumbnail_banner" : "https://i.imgur.com/3Ddxa2X.jpg",
+    "courseDetail" : {
+        "description" : "AutoCAD is a powerful computer-aided design (CAD) software that allows professionals to create detailed 2D and 3D drawings and models. This course will provide a comprehensive introduction to the software, including its interface, tools, and features.\nThroughout the course, students will learn how to navigate the AutoCAD interface and use its various tools to create and edit drawings. Topics covered will include basic drawing and editing commands, working with layers, creating and manipulating 3D models, and using advanced features such as parametric drawing and dynamic blocks.\nThe course will also cover best practices for working with AutoCAD, including setting up a proper workspace, using templates, and creating and organizing drawings. Additionally, students will learn how to collaborate and share their work with others, including exporting drawings in a variety of file formats and working with data links.\nBy the end of the course, students will have a solid understanding of AutoCAD and its capabilities, as well as the skills and knowledge to create professional-quality drawings and models using the software. This course is suitable for professionals in architecture, engineering, construction and manufacturing who want to learn AutoCAD or improve their skills.",
+        "learningObjectives" : ["Understand the AutoCAD interface and navigation tools",
+        "Create and edit basic 2D drawings using AutoCAD's drawing and editing commands",
+        "Work with layers and organize drawings effectively",
+        "Create and manipulate 3D models in AutoCAD",
+        "Use advanced AutoCAD features such as parametric drawing and dynamic blocks",
+        "Set up a proper AutoCAD workspace and use templates",
+        "Collaborate and share drawings with others, including exporting in various file formats and working with data links",
+        "Understand best practices for working efficiently in AutoCAD",
+        "Create professional-quality drawings and models using the software",
+        "Understand the software capabilities and how it can be applied in architecture, engineering, construction and manufacturing."],
+
+        "courseContents" : [
+            { 
+                "courseContentName": "Chapter 1: INTRODUCTORY OF COURSE" , 
+                "courseSubContents" : [
+                    {
+                        "name": "01- FAQ",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/50a1254b-9bdf-4c44-a801-c8cab3a943fa"
+                        }
+                    },
+                    {
+                        "name": "02- Software Installation problem & its solution",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/fd85e42b-ecbd-415d-9d21-99da2856d8a4"
+                        }
+                    },
+                    {
+                        "name": "Complete installation of Autocad 2016",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/4985a1b2-4b6b-4f6a-a827-c7573fc03147"
+                        }
+                    },
+                    {
+                        "name": "How to install AutoCAD 2021",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/23659acc-ad13-4e88-8695-bfc3c2b4c12e"
+                        }
+                    }
+                ]
+            },
+            {
+                "courseContentName": "Chapter 2: Primary Interface of AutoCAD" , 
+                "courseSubContents" : [
+                    {
+                        "name": "Opening an AutoCAD",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/d40ab486-acd6-4988-973b-29fd051a8a1c"
+                        }
+                    },
+                    {
+                        "name": "Primary settings in AutoCAD",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/a6934a8c-fc6f-4a81-8608-ab9e5bef3239"
+                        }
+                    },
+                    {
+                        "name": "Drawing Tools in AutoCAD",
+                        "video" : {
+                            "videoUrl" : "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                        }
+                    }
+                ]
+            },
+            {
+                "courseContentName": "Chapter 3: Drawing & Modify Tools Part 2" , 
+            "courseSubContents" : [
+                { 
+                    "name": "08- Extra Drawing Tools part 1",
+                    "video" : {
+                        "videoUrl" : "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                },
+                {
+                    "name": "09- Extra Modify Tools part 2",
+                    "video" : {
+                        "videoUrl" : "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                }
+              ]
+            },
+            {
+                "courseContentName": "Chapter 4: Draw/Modify/Inquiry Tools" , 
+                "courseSubContents" : [
+                    {
+                      "name": "10- Extra Draw Inquiry modify tools part 1",
+                      "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                      }
+                    },
+                    {
+                      "name": "11-Extra Draw Inquiry Modify Tools part 2",
+                      "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                      }
+                    },
+                    {
+                      "name": "12.0-Extra Draw Inquiry Modify Tools part 2",
+                      "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                      }
+                    },
+                    {
+                      "name": "12.1 -Autocad Exercise Doubt clarification",
+                      "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                      }
+                    }
+                  ]
+            },
+            {
+                "courseContentName": "Chapter 5: Layering/Miracle Tools" , 
+                "courseSubContents" : [{
+                    "name" : "13- Layering",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "14-layer states manager",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "15- Miracle commands- mirror rotate scale",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "16- How to make plan",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "16.1Function keys & shortcut keys",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 }]
+            },
+            {
+                "courseContentName": "Chapter 6: Making of Elevation" , 
+                "courseSubContents" : [{
+                    "name" : "17-How to make front Elevation as per Submission Drawing part 1",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "18- How to make Front Elevation as per Submission Drawing part 2",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 }]
+            },
+            {
+                "courseContentName": "Chapter 7: Septic Tank & RWHS Design" , 
+                "courseSubContents" : [{
+                    "name" : "19-AutoCAD Commands- Matchprop, change, LTS, Hatch & Regen",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "20 DESIGN OF SEPTIC TANK",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "21-How to Design Roof Top Rain Water Harvesting System",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 }]
+            },
+            {
+                "courseContentName": "Chapter 8: Understanding Concept of Sectional View" , 
+                "courseSubContents" : [{
+                    "name" : "22- How to make section drawing as per submission drawing part 1",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 },
+                 {
+                    "name" : "23- How to make section drawing as per submission drawing part 2",
+                    "video": {
+                        "videoUrl": "https://video.bunnycdn.com/play/32825/4106738b-f45c-4bf7-9415-974f00f949fa"
+                    }
+                 }]
+            }
+        ]
+    }
+}

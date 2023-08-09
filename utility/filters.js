@@ -1,0 +1,10 @@
+const uniq = (a) => {
+    var seen = {};
+    return a.filter(function(item) {
+        return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+    });
+}
+
+module.exports = {
+    uniq
+}
