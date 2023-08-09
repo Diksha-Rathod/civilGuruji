@@ -3,12 +3,12 @@ const nodemailer = require("nodemailer");
 var transport = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
   port: 2525,
-  secureConnection: false, // TLS requires secureConnection to be false
+  secureConnection: false,
   auth: {
-    user: "89032b674ebb4c",
-    pass: "187974402d7b07"
-  },
-})
+    user: "59780562572235",
+    pass: "515e4d7eac903d"
+  }
+});
 const mail = (email, subject, message) => {
   console.log(email,subject,message)
   var mailOptions = {

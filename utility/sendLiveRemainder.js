@@ -7,17 +7,17 @@ const sendMail = require('../mailer/sendMail');
 var logger = require('logger').createLogger('logs/routes.log');
 const sendLiveMeetingRemainder = async () => {
     try {
-        const currentTime = moment().format('YYYY-MM-DDTHH:mm:ssZ');
-        const tenMinutesBefore = moment().subtract(10, 'minutes').format('YYYY-MM-DDTHH:mm:ssZ');
+        const currentTime = moment().format('YYYY-MM-DDTHH:mm:ss') + 'Z';
+        const tenMinutesBefore = moment().add(10, 'minutes').format('YYYY-MM-DDTHH:mm:ss') + 'Z';
+        const ElevenMinutesBefore = moment().add(11, 'minutes').format('YYYY-MM-DDTHH:mm:ss') + 'Z';
+        console.log(currentTime, tenMinutesBefore, nineMinutesBefore)
         const upcomingMeetings = await meeting.find({
             start_time: {
-                $gte: tenMinutesBefore,
-                $lt: currentTime,
-            },
-        }).populate('courseId')
-            .exec();
-        console.log(currentTime, tenMinutesBefore, upcomingMeetings)
-        console.log(upcomingMeetings.length, "======length")
+                $gte: tenMinutesBefore, 
+                $lte: ElevenMinutesBefore  
+            }
+        });
+        console.log(upcomingMeetings, "======length")
         if (upcomingMeetings.length) {
             const courseDetailIds = upcomingMeetings.map((meeting) => meeting.courseId);
             console.log(courseDetailIds, "==============courseDetailIds")
@@ -29,27 +29,27 @@ const sendLiveMeetingRemainder = async () => {
             });
             if (userDetails) {
                 for (let userData of userDetails) {
-                    console.log(userData.phoneNumber, userData.userDetail.email);
-                    var params = {
-                        Message: 'Hello ' + userData.userDetail.username + ' You have upcoming live session in 10 minutes',
-                        PhoneNumber: '+91' + userData.phoneNumber,
-                    }
-                    new AWS.SNS({ apiVersion: '2010-03-31' })
-                        .publish(params)
-                        .promise()
-                        .then((message) => {
-                            logger.info(message)
-                            logger.info('Message sent');
-                        })
-                    let messageBody = `<h2>Hello ${userData.userDetail.username}</h2>
-                        <p>You have live session in upcoming 10 minutes</p>
-                        <p>Thank You</p>
-                        <p>civilguruji@gmail.com</p>`;
-                    sendMail(
-                        userData.userDetail.email.toLowerCase(),
-                        "Live session remainder",
-                        messageBody
-                    );
+                    // console.log(userData.phoneNumber, userData.userDetail.email);
+                    // var params = {
+                    //     Message: 'Hello ' + userData.userDetail.username + ' You have upcoming live session in 10 minutes',
+                    //     PhoneNumber: '+91' + userData.phoneNumber,
+                    // }
+                    // new AWS.SNS({ apiVersion: '2010-03-31' })
+                    //     .publish(params)
+                    //     .promise()
+                    //     .then((message) => {
+                    //         logger.info(message)
+                    //         logger.info('Message sent');
+                    //     })
+                    // let messageBody = `<h2>Hello ${userData.userDetail.username}</h2>
+                    //     <p>You have live session in upcoming 10 minutes</p>
+                    //     <p>Thank You</p>
+                    //     <p>civilguruji@gmail.com</p>`;
+                    // sendMail(
+                    //     userData.userDetail.email.toLowerCase(),
+                    //     "Live session remainder",
+                    //     messageBody
+                    // );
                 }
 
             }

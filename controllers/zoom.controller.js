@@ -6,13 +6,9 @@ const meeting = require('../models/meeting.model');
 const router = require('express').Router();
 const moment = require('moment');
 router.post('/', (req, res) => {
-
-
     const KJUR = require('jsrsasign')
-
     const iat = Math.round(new Date().getTime() / 1000) - 30;
     const exp = iat + 60 * 60 * 2
-
     const Header = {
         alg: 'HS256',
         typ: 'JWT'
@@ -42,22 +38,17 @@ router.post('/', (req, res) => {
 const generateJwtToken = () => {
     const apiKey = 'LDtab6VaQCeYanZMM1fMJw';
     const apiSecret = 'zQ31kjKAl4SJdiIr2ByJ1HBCA4Zi6lgz';
-
     const payload = {
         iss: apiKey,
         exp: Math.floor(Date.now() / 1000) + 60, // Expiration time (in seconds)
     };
-
     const token = jwt.sign(payload, apiSecret);
-
     return token;
 };
 
 router.post('/createMeeting', async (req, res) => {
     try {
-
         const token = await getZoomAccessToken();
-
         if (token) {
 
             let { topic, start_time, courseId } = req?.body
@@ -101,17 +92,15 @@ router.post('/createMeeting', async (req, res) => {
 
 router.get('/listMeetings/:id', async (req, res) => {
     try {
-
-        let courseId = req?.params?.id
-
+        let courseId = req?.params?.id;
         if (!courseId) { return res.status(400).json({ message: 'Invalid request body!' }) }
         const currentTime = moment().format('YYYY-MM-DDTHH:mm:ssZ');
         const meetings = await meeting.find({
             courseId: courseId,
             start_time: {
-              $gt: currentTime,
+                $gt: currentTime,
             },
-          });
+        });
         console.log(meetings, "===========meetings");
         res.status(200).json(meetings)
     } catch (error) {
